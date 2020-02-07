@@ -1,0 +1,1 @@
+Summarization of legal text
