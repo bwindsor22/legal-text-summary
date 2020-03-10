@@ -113,17 +113,3 @@ print(minutes_found)
 print(len(minutes_found), 'mins found')
 download_files(minutes_found)
 
-
-"""
-OCR: 
-for f in ./*.pdf; do ocrmypdf "$f" "$(basename "$f" ".pdf")_ocr.pdf"; done
-
-PDF to text: 
-for f in ./*.pdf; do pdftotext "$f" "$(basename "$f" ".pdf").txt"; done
-mv *.txt ../beige-book-txt/
-
-
-textutil -convert txt *.htm
-mv *.txt ../press-releases-txt/
-
-"""
