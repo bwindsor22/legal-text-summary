@@ -3,7 +3,8 @@
 
 # OCR:
 for f in ./*.pdf; do ocrmypdf "$f" "$(basename "$f" ".pdf")_ocr.pdf"; done
-
+mkdir ocr
+mv *_ocr.pdf ./ocr/
 
 # PDF to text:
 for f in ./*.pdf; do
