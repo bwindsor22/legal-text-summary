@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-
+# brew install ocrmypdf pdftotext
 
 # OCR:
 for f in ./*.pdf; do ocrmypdf "$f" "$(basename "$f" ".pdf")_ocr.pdf"; done
